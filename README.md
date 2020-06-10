@@ -1,2 +1,0 @@
-# projectViz
-Visualization for Projects
