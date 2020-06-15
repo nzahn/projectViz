@@ -1,16 +1,31 @@
 {
     "type": "AdaptiveCard",
     "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-    "version": "1.0",
+    "version": "1.1",
     "body": [
         {
-            "type": "TextBlock",
-            "text": "Decision Matrix",
-            "spacing": "Large",
-            "fontType": "Default",
-            "size": "ExtraLarge",
-            "weight": "Bolder",
-            "color": "Dark"
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Decision Matrix",
+                            "spacing": "Large",
+                            "fontType": "Default",
+                            "size": "ExtraLarge",
+                            "weight": "Bolder",
+                            "color": "Dark"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch"
+                }
+            ]
         },
         {
             "type": "ColumnSet",
@@ -32,164 +47,308 @@
             "columns": [
                 {
                     "type": "Column",
+                    "width": "stretch"
+                },
+                {
+                    "type": "Column",
                     "width": "stretch",
-                    "style": "default"
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "High"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Medium"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Low"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Key Partners"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "Small"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Key Ressources"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "Small"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Key Activities"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "Small"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Value Propositions"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "Small"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Customer Relationship"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "Small"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Markt Segmentation"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "Small"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Sales Channel"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "Small"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Cost Structure"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "Small"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Income"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "Small"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
                 },
                 {
                     "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch"
+                    "width": "stretch",
+                    "spacing": "None"
                 }
             ]
         }
