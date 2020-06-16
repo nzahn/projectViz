@@ -14,10 +14,34 @@
                             "type": "TextBlock",
                             "text": "Decision Matrix",
                             "spacing": "Large",
-                            "fontType": "Default",
                             "size": "ExtraLarge",
                             "weight": "Bolder",
                             "color": "Dark"
+                        },
+                        {
+                            "type": "ColumnSet",
+                            "spacing": "None",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": "auto",
+                                    "items": [
+                                        {
+                                            "type": "Image"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Autor"
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
@@ -36,7 +60,7 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Beschreibung"
+                            "text": "Description"
                         }
                     ]
                 }
@@ -55,7 +79,8 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "High"
+                            "text": "High",
+                            "size": "Small"
                         }
                     ]
                 },
@@ -65,7 +90,8 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Medium"
+                            "text": "Medium",
+                            "size": "Small"
                         }
                     ]
                 },
@@ -75,12 +101,14 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Low"
+                            "text": "Low",
+                            "size": "Small"
                         }
                     ]
                 }
             ],
-            "spacing": "None"
+            "spacing": "None",
+            "separator": true
         },
         {
             "type": "ColumnSet",
@@ -91,24 +119,44 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Key Partners"
+                            "text": "Key Partners",
+                            "size": "Small",
+                            "weight": "Lighter"
                         }
                     ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "Small"
+                    "spacing": "Small",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 }
             ]
         },
@@ -121,24 +169,141 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Key Ressources"
+                            "text": "Key Ressources",
+                            "size": "Small",
+                            "weight": "Lighter"
                         }
                     ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "Small"
+                    "spacing": "Small",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Key Activities",
+                            "size": "Small",
+                            "weight": "Lighter"
+                        }
+                    ],
+                    "width": "stretch"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "spacing": "Small",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Value Propositions",
+                            "size": "Small",
+                            "weight": "Lighter"
+                        }
+                    ],
+                    "width": "stretch"
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "spacing": "Small",
+                    "items": [
+                        {
+                            "type": "Image"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image"
+                        }
+                    ]
                 }
             ]
         },
@@ -151,24 +316,44 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Key Activities"
+                            "text": "Customer Relationship",
+                            "size": "Small",
+                            "weight": "Lighter"
                         }
                     ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "Small"
+                    "spacing": "Small",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 }
             ]
         },
@@ -181,24 +366,44 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Value Propositions"
+                            "text": "Markt Segmentation",
+                            "size": "Small",
+                            "weight": "Lighter"
                         }
                     ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "Small"
+                    "spacing": "Small",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 }
             ]
         },
@@ -211,24 +416,44 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Customer Relationship"
+                            "text": "Sales Channel",
+                            "size": "Small",
+                            "weight": "Lighter"
                         }
                     ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "Small"
+                    "spacing": "Small",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 }
             ]
         },
@@ -241,24 +466,44 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Markt Segmentation"
+                            "text": "Cost Structure",
+                            "size": "Small",
+                            "weight": "Lighter"
                         }
                     ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "Small"
+                    "spacing": "Small",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 }
             ]
         },
@@ -271,84 +516,44 @@
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Sales Channel"
+                            "text": "Income",
+                            "size": "Small",
+                            "weight": "Lighter"
                         }
                     ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "Small"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "spacing": "None"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "spacing": "None"
-                }
-            ]
-        },
-        {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": "stretch",
+                    "spacing": "Small",
                     "items": [
                         {
-                            "type": "TextBlock",
-                            "text": "Cost Structure"
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
                         }
                     ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "Small"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "spacing": "None"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "spacing": "None"
-                }
-            ]
-        },
-        {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": "stretch",
+                    "spacing": "None",
                     "items": [
                         {
-                            "type": "TextBlock",
-                            "text": "Income"
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
                         }
                     ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "Small"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "spacing": "None"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "spacing": "None"
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
                 }
             ]
         },
@@ -365,36 +570,39 @@
                             "size": "Medium",
                             "weight": "Bolder"
                         }
+                    ],
+                    "separator": true
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "spacing": "Small",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
                     ]
                 },
                 {
                     "type": "Column",
                     "width": "stretch",
-                    "spacing": "Small"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "spacing": "None"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "spacing": "None"
-                }
-            ]
-        },
-        {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": "stretch",
+                    "spacing": "None",
                     "items": [
                         {
-                            "type": "TextBlock",
-                            "text": "Personal Opinion",
-                            "size": "Medium"
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "spacing": "None",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "horizontalAlignment": "Center"
                         }
                     ]
                 }
@@ -409,7 +617,38 @@
                     "items": [
                         {
                             "type": "TextBlock",
+                            "text": "Personal Opinion",
+                            "separator": true,
+                            "size": "Medium"
+                        }
+                    ]
+                }
+            ],
+            "separator": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "TextBlock",
                             "text": "Personal Opinion Text"
+                        },
+                        {
+                            "type": "ColumnSet",
+                            "columns": [
+                                {
+                                    "type": "Column",
+                                    "width": "stretch"
+                                },
+                                {
+                                    "type": "Column",
+                                    "width": "stretch"
+                                }
+                            ]
                         }
                     ]
                 }
