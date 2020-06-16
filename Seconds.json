@@ -18,8 +18,7 @@
                                     "text": "Decision Matrix",
                                     "spacing": "Large",
                                     "size": "ExtraLarge",
-                                    "weight": "Bolder",
-                                    "color": "Dark"
+                                    "weight": "Bolder"
                                 },
                                 {
                                     "type": "ColumnSet",
@@ -49,10 +48,6 @@
                                     ]
                                 }
                             ]
-                        },
-                        {
-                            "type": "Column",
-                            "width": "stretch"
                         }
                     ]
                 },
@@ -66,96 +61,177 @@
                             "items": [
                                 {
                                     "type": "TextBlock",
-                                    "text": "Description"
+                                    "text": "Description",
+                                    "spacing": "Medium",
+                                    "wrap": true
                                 }
                             ]
                         }
                     ]
                 }
-            ]
+            ],
+            "spacing": "None"
         },
         {
-            "type": "ColumnSet",
-            "columns": [
+            "type": "Container",
+            "items": [
                 {
-                    "type": "Column",
-                    "width": "stretch"
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
+                    "type": "ColumnSet",
+                    "columns": [
                         {
-                            "type": "TextBlock",
-                            "text": "High"
+                            "type": "Column",
+                            "width": "stretch"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "High",
+                                    "weight": "Bolder"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Medium",
+                                    "weight": "Bolder"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Low",
+                                    "weight": "Bolder"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
+                    "type": "ColumnSet",
+                    "columns": [
                         {
-                            "type": "TextBlock",
-                            "text": "Medium"
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Importance",
+                                    "size": "Medium",
+                                    "weight": "Bolder"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image"
+                                }
+                            ],
+                            "spacing": "None"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image"
+                                }
+                            ],
+                            "spacing": "None"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "Image"
+                                }
+                            ],
+                            "spacing": "None"
                         }
-                    ]
-                },
+                    ],
+                    "spacing": "None"
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "items": [
                 {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
+                    "type": "ColumnSet",
+                    "columns": [
                         {
-                            "type": "TextBlock",
-                            "text": "Low"
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Opinion",
+                                    "weight": "Bolder"
+                                },
+                                {
+                                    "type": "ColumnSet",
+                                    "columns": [
+                                        {
+                                            "type": "Column",
+                                            "width": "stretch",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "New TextBlock",
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
-            ]
+            ],
+            "separator": true
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "PRINT"
         },
         {
-            "type": "ColumnSet",
-            "columns": [
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "TextBlock",
-                            "text": "Total",
-                            "size": "Medium",
-                            "weight": "Bolder"
-                        }
-                    ]
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "Image"
-                        }
-                    ]
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "Image"
-                        }
-                    ]
-                },
-                {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                        {
-                            "type": "Image"
-                        }
-                    ]
-                }
-            ]
+            "type": "Action.ShowCard",
+            "title": "DETAILS",
+            "card": {
+                "type": "AdaptiveCard"
+            }
+        },
+        {
+            "type": "Action.ShowCard",
+            "title": "ACCEPT",
+            "card": {
+                "type": "AdaptiveCard"
+            }
+        },
+        {
+            "type": "Action.ShowCard",
+            "title": "DECLAIN",
+            "card": {
+                "type": "AdaptiveCard"
+            }
         }
     ]
 }
