@@ -1,0 +1,25 @@
+{
+    "decision":{
+       "title": "Kartonage"
+   },
+
+   "importance": 
+   {
+   "total":"35",
+   "keypartners_total":"35",
+   "keyressources_total":"35",
+   "keyactivities_total":"35",
+   "valuepropositions_total":"35",
+   "customerrelationship_total":"35",
+   "marketsegmentation_total":"35",
+   "saleschannel_total":"35",
+   "coststructure_total":"35",
+   "income_total":"35"
+   },
+   "creator": {
+    "name": "Matt Hidinger",
+    "profileImage": "https://pbs.twimg.com/profile_images/3647943215/d7f12830b3c17a5a9e4afcc370e3a37e_400x400.jpeg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at sapien eleifend, mattis arcu at, interdum sem. Donec nibh lacus, malesuada id suscipit ac, feugiat in augue. Nam tempor est at sem maximus, varius tristique leo porta. Curabitur egestas urna eu nulla porttitor, sed elementum lorem ultrices. Mauris sit amet eros augue. Mauris nec hendrerit nisl. Donec ex turpis, cursus et mattis in, dictum maximus quam. Nam id lobortis nibh, vitae pellentesque metus. Aliquam enim elit, porttitor nec nunc id, egestas pulvinar odio. Maecenas arcu erat, placerat sed porttitor ut, consequat ut arcu. Mauris suscipit ex non iaculis mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla convallis et tortor vel feugiat. Aliquam ultrices, augue eu pellentesque dignissim, quam urna condimentum elit, nec sodales urna dui eget est. Quisque nec vulputate massa. Aliquam porta sapien quis eleifend ultricies. Morbi lacinia turpis non odio vestibulum lobortis. Maecenas arcu diam, facilisis sit amet nisi sed, malesuada euismod tortor. Cras lobortis commodo velit vel cursus. Quisque eleifend rutrum justo, ac tincidunt lorem viverra ut. Vestibulum quis nibh id enim aliquet laoreet. Fusce facilisis laoreet felis, id vestibulum massa lacinia non.",
+    "opinion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at sapien eleifend, mattis arcu at, interdum sem. Donec nibh lacus, malesuada id suscipit ac, feugiat in augue. Nam tempor est at sem maximus, varius tristique leo porta. Curabitur egestas urna eu nulla porttitor, sed elementum lorem ultrices. Mauris sit amet eros augue. Mauris nec hendrerit nisl. Donec ex turpis, cursus et mattis in, dictum maximus quam. Nam id lobortis nibh, vitae pellentesque metus. Aliquam enim elit, porttitor nec nunc id, egestas pulvinar odio. Maecenas arcu erat, placerat sed porttitor ut, consequat ut arcu. Mauris suscipit ex non iaculis mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla convallis et tortor vel feugiat. Aliquam ultrices, augue eu pellentesque dignissim, quam urna condimentum elit, nec sodales urna dui eget est. Quisque nec vulputate massa. Aliquam porta sapien quis eleifend ultricies. Morbi lacinia turpis non odio vestibulum lobortis. Maecenas arcu diam, facilisis sit amet nisi sed, malesuada euismod tortor. Cras lobortis commodo velit vel cursus. Quisque eleifend rutrum justo, ac tincidunt lorem viverra ut. Vestibulum quis nibh id enim aliquet laoreet. Fusce facilisis laoreet felis, id vestibulum massa lacinia non."
+   }
+}

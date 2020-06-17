@@ -1,0 +1,1055 @@
+{
+    "type": "AdaptiveCard",
+    "$data":{},
+    "body": [
+        {
+            "type": "Container",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "large",
+                                    "weight": "bolder",
+                                    "text": "**DECISION**"
+                                }
+                            ],
+                            "width": "stretch"
+                        },
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "https://adaptivecards.io/content/pending.png",
+                                    "altText": "Pending",
+                                    "size": "medium"
+                                }
+                            ],
+                            "width": "auto"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${decision.title}",
+                                    "spacing": "Large",
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder"
+                                },
+                                {
+                                    "type": "ColumnSet",
+                                    "spacing": "None",
+                                    "columns": [
+                                        {
+                                            "type": "Column",
+                                            "width": "auto",
+                                            "items": [
+                                                {
+                                                    "type": "Image",
+                                                    "url": "${creator.profileImage}",
+                                                    "size": "Small"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Column",
+                                            "width": "stretch",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${creator.name}"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "ColumnSet",
+                    "separator": true,
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${creator.description}",
+                                    "spacing": "Medium",
+                                    "wrap": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Importance",
+                                    "size": "Medium",
+                                    "weight": "Bolder"
+                                }
+                            ],
+                            "spacing": "None",
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "$when": "${importance.total >= 100}", 
+                                    "text": "HIGH",
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder",
+                                    "color": "Attention",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "$when": "${importance.total <= 60}", 
+                                    "text": "MEDIUM",
+                                    "horizontalAlignment": "Center",
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder",
+                                    "color": "Warning",
+                                    "spacing": "None"
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "$when": "${importance.total <= 30}",
+                                    "text": "LOW",
+                                    "size": "ExtraLarge",
+                                    "weight": "Bolder",
+                                    "color": "Good",
+                                    "horizontalAlignment": "Center",
+                                    "spacing": "None"
+                                }
+                            ]
+                        }
+                    ],
+                    "spacing": "None"
+                }
+            ],
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Opinion",
+                                    "weight": "Bolder"
+                                },
+                                {
+                                    "type": "ColumnSet",
+                                    "columns": [
+                                        {
+                                            "type": "Column",
+                                            "width": "stretch",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${creator.opinion}",
+                                                    "wrap": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "separator": true
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "title": "PRINT"
+        },
+        {
+            "type": "Action.ShowCard",
+            "title": "DETAILS",
+            "card": {
+                "type": "AdaptiveCard",
+                "body": [
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Key Partners",
+                                                "size": "medium"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "HIGH",
+                                                "size": "medium",
+                                                "weight": "bolder",
+                                                "color": "attention",
+                                                "horizontalAlignment": "center",
+                                                "spacing": "none",
+                                                "id": "keyPartners_high"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "MEDIUM",
+                                                "horizontalAlignment": "Center",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Warning",
+                                                "spacing": "None",
+                                                "id": "keyPartners_medium"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "LOW",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Good",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None",
+                                                "id": "keyPartners_low"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "separator": true,
+                        "style": "default"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Kommentar:",
+                                                "spacing": "None",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "New TextBlock",
+                                                "wrap": true,
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "id": "keyPartner_comments",
+                        "style": "emphasis"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Key Ressources",
+                                                "size": "Medium"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "HIGH",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Attention",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "MEDIUM",
+                                                "horizontalAlignment": "Center",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Warning",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "LOW",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Good",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "default"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Kommentar:",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "New TextBlock",
+                                                "wrap": true,
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "id": "keyRessources_comments",
+                        "style": "emphasis"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Key Activities",
+                                                "size": "Medium"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "HIGH",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Attention",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "MEDIUM",
+                                                "horizontalAlignment": "Center",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Warning",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "LOW",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Good",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "default"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Kommentar:",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "New TextBlock",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "id": "KeyActivities_comments",
+                        "style": "emphasis"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Value Propositions",
+                                                "size": "Medium"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "HIGH",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Attention",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "MEDIUM",
+                                                "horizontalAlignment": "Center",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Warning",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "LOW",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Good",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "default"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Kommentar:",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "New TextBlock",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "id": "valuePropositions_comments",
+                        "style": "emphasis"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Customer Relationship",
+                                                "size": "Medium"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "HIGH",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Attention",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "MEDIUM",
+                                                "horizontalAlignment": "Center",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Warning",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "LOW",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Good",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "default"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Kommentar:",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "New TextBlock",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "emphasis",
+                        "id": "customerRelationship_comments"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Markt Segmentation",
+                                                "size": "Medium"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "HIGH",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Attention",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "MEDIUM",
+                                                "horizontalAlignment": "Center",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Warning",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "LOW",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Good",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "default"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Kommentar:",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "New TextBlock",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "id": "marktSegmentation_comments",
+                        "style": "emphasis"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Sales Channel",
+                                                "size": "Medium"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "HIGH",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Attention",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "MEDIUM",
+                                                "horizontalAlignment": "Center",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Warning",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "LOW",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Good",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "default"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Kommentar:",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "New TextBlock",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "id": "salesChannel_comments",
+                        "style": "emphasis"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Cost Structure",
+                                                "size": "Medium"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "HIGH",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Attention",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "MEDIUM",
+                                                "horizontalAlignment": "Center",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Warning",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "LOW",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Good",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "default"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Kommentar:",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "New TextBlock",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "id": "costStructure_comments",
+                        "style": "emphasis"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Income",
+                                                "size": "Medium"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "HIGH",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Attention",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "MEDIUM",
+                                                "horizontalAlignment": "Center",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Warning",
+                                                "spacing": "None"
+                                            },
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "LOW",
+                                                "size": "Medium",
+                                                "weight": "Bolder",
+                                                "color": "Good",
+                                                "horizontalAlignment": "Center",
+                                                "spacing": "None"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "default"
+                    },
+                    {
+                        "type": "Container",
+                        "items": [
+                            {
+                                "type": "ColumnSet",
+                                "columns": [
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "Kommentar:",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Column",
+                                        "width": "stretch",
+                                        "spacing": "Small",
+                                        "items": [
+                                            {
+                                                "type": "TextBlock",
+                                                "text": "New TextBlock",
+                                                "size": "Small"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "id": "income_comments",
+                        "style": "emphasis"
+                    }
+
+
+
+
+                ]
+            }
+        }
+    ]
+}

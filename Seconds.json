@@ -16,9 +16,9 @@
                                 {
                                     "type": "TextBlock",
                                     "text": "Decision Matrix",
-                                    "spacing": "Large",
-                                    "size": "ExtraLarge",
-                                    "weight": "Bolder"
+                                    "spacing": "large",
+                                    "size": "extraLarge",
+                                    "weight": "bolder"
                                 },
                                 {
                                     "type": "ColumnSet",
@@ -218,20 +218,8 @@
             "card": {
                 "type": "AdaptiveCard"
             }
-        },
-        {
-            "type": "Action.ShowCard",
-            "title": "ACCEPT",
-            "card": {
-                "type": "AdaptiveCard"
-            }
-        },
-        {
-            "type": "Action.ShowCard",
-            "title": "DECLAIN",
-            "card": {
-                "type": "AdaptiveCard"
-            }
         }
+        
+        
     ]
 }
